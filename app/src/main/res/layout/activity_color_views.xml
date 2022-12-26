@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cl"
+    tools:context=".practice.ColorViewsActivity">
+
+
+    <TextView
+        android:id="@+id/tvOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="BOX ONE"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="BOX TWO"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toStartOf="@id/tvThree"
+        app:layout_constraintBottom_toBottomOf="@id/tvFive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOne" />
+
+    <TextView
+        android:id="@+id/tvThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="BOX Three"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintStart_toEndOf="@id/tvTwo"
+        app:layout_constraintTop_toBottomOf="@id/tvOne"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@id/tvOne"/>
+
+    <TextView
+        android:id="@+id/tvFour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="BOX Four"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintStart_toEndOf="@id/tvTwo"
+        app:layout_constraintTop_toBottomOf="@id/tvThree"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@id/tvThree"
+        android:layout_marginLeft="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:id="@+id/tvFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="BOX Five"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintStart_toEndOf="@id/tvTwo"
+        app:layout_constraintTop_toBottomOf="@id/tvFour"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@id/tvFour" />
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="HOW TO PLAY"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintTop_toBottomOf="@id/tvTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_20sdp"/>
+    <TextView
+        android:id="@+id/tvTap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap the screen And Button"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toEndOf="@id/tvLabel"
+        app:layout_constraintTop_toTopOf="@id/tvLabel"
+        app:layout_constraintBottom_toBottomOf="@id/tvLabel"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/btnWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WHITE"
+        android:padding="@dimen/_5sdp"
+        android:elevation="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTap"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/_20sdp"
+        app:layout_constraintEnd_toStartOf="@id/btnOrange"
+        />
+
+    <Button
+        android:id="@+id/btnOrange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orange"
+        android:elevation="@dimen/_8sdp"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTap"
+        app:layout_constraintStart_toEndOf="@id/btnWhite"
+        android:layout_marginLeft="@dimen/_20sdp"
+        app:layout_constraintEnd_toStartOf="@id/btnChocolate"/>
+    <Button
+        android:id="@+id/btnChocolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chocolate"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTap"
+        app:layout_constraintStart_toEndOf="@id/btnOrange"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:elevation="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="@dimen/_20sdp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

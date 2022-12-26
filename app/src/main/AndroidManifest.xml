@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.note.app.mykotlinproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyKotlinProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".currencyconveerter.CurrencyConverterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".currentlocation.CurrentLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".passdataintent.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".passdataintent.FirstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview.GridRecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".spinner.SpinnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".roomdatabase.KhataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".practice.calculator.ComplexCalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".practice.calculator.BasicCalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".practice.calculator.CalculatorMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".practice.DiceRollerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".practice.ColorViewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".practice.CodePracticeMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".retrofitmvvm.RetrofitMvvmMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".retrofitcoroutines.RectrofitCoroutineMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mvvm.MvvmMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".coroutine.CoroutinesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".quizApp.ResultActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ActivityQuizApp" />
+        <activity
+            android:name=".quizApp.QuestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".currentAge.CurrentAgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".quizApp.QuizAppActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActivityQuizApp"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

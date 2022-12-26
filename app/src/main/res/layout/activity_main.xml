@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<Button
+    android:layout_width="@dimen/_90sdp"
+    android:layout_height="@dimen/_50sdp"
+    android:text="Current Age"
+    app:layout_constraintStart_toStartOf="parent"
+   android:layout_marginLeft="30dp"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="20dp"
+    android:id="@+id/btnAge"/>
+
+    <Button
+        android:id="@+id/btnQuiz"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="32dp"
+        android:text="Quiz App"
+        app:layout_constraintStart_toEndOf="@id/btnAge"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Coroutines"
+        app:layout_constraintStart_toEndOf="@id/btnMvvm"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/btnQuiz"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnCoroutines"/>
+    <Button
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="MVVM"
+        app:layout_constraintTop_toBottomOf="@id/btnAge"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnMvvm"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="RetrofitCorotine"
+        app:layout_constraintStart_toEndOf="@id/btnMvvm"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/btnMvvm"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnRetrofit"/>
+    <Button
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Retrofit Mvvm"
+        app:layout_constraintTop_toBottomOf="@id/btnCoroutines"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnRetrofitmvvm"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Code Practice "
+        app:layout_constraintTop_toBottomOf="@id/btnRetrofitmvvm"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnPractice"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Navigation "
+        app:layout_constraintTop_toBottomOf="@id/btnRetrofitmvvm"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnNavigation"
+        app:layout_constraintStart_toEndOf="@id/btnPractice"/>
+    <Button
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="RoomDataBase "
+        app:layout_constraintTop_toBottomOf="@id/btnRetrofitmvvm"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnRoomDataBase"
+        app:layout_constraintStart_toEndOf="@id/btnPractice"/>
+    <Button
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Grid RecyclerView"
+        app:layout_constraintTop_toBottomOf="@id/btnPractice"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnGridRecycler"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Pass Data Intent"
+        app:layout_constraintStart_toEndOf="@id/btnGridRecycler"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/btnRoomDataBase"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnSendData"/>
+    <Button
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Currency Converter"
+        app:layout_constraintTop_toBottomOf="@id/btnGridRecycler"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnCurrency"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
